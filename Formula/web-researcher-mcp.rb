@@ -5,13 +5,13 @@
 class WebResearcherMcp < Formula
   desc "Your AI research assistant that cites real sources and stays honest"
   homepage "https://github.com/zoharbabin/web-researcher-mcp"
-  version "1.37.0"
+  version "1.37.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v1.37.0/web-researcher-mcp_1.37.0_darwin_amd64.tar.gz"
-      sha256 "a32ff7533a29a5c4e0f586a94114f682c4b7bd8efb1673a9a2ce6359b1c17ac0"
+      url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v1.37.1/web-researcher-mcp_1.37.1_darwin_amd64.tar.gz"
+      sha256 "c2bbb91f499a9391623b021c986e3defd7fcd65a7f5b441774be4f5722c04f26"
 
       define_method(:install) do
         bin.install "web-researcher-mcp"
@@ -19,8 +19,8 @@ class WebResearcherMcp < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v1.37.0/web-researcher-mcp_1.37.0_darwin_arm64.tar.gz"
-      sha256 "f24b7c3a6a52bf5fa22bbec83db92c27ac3cafb8f396ae94b2c6cc401e1b8f69"
+      url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v1.37.1/web-researcher-mcp_1.37.1_darwin_arm64.tar.gz"
+      sha256 "35460d1cb4408d327ec352b22ac1819c5bf56d1f9286c5b44f5213fb8cc1074f"
 
       define_method(:install) do
         bin.install "web-researcher-mcp"
@@ -31,16 +31,16 @@ class WebResearcherMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v1.37.0/web-researcher-mcp_1.37.0_linux_amd64.tar.gz"
-      sha256 "e3b7c5ae5b3c9de3b73c7dfda6de027cae3d61abb040f5657e377c36c551ca16"
+      url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v1.37.1/web-researcher-mcp_1.37.1_linux_amd64.tar.gz"
+      sha256 "aa977dd38898b9179fb6acd25ac39b8fb1cb266c8ece355a5e339afb5541377b"
       define_method(:install) do
         bin.install "web-researcher-mcp"
         (share/"web-researcher-mcp/lenses").install Dir["lenses/*"] if Dir.exist?("lenses")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v1.37.0/web-researcher-mcp_1.37.0_linux_arm64.tar.gz"
-      sha256 "d2b33b027f5fc5e9003fae8b9fd5cd3e41dcd3c8113d88462ef5095bb151a9be"
+      url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v1.37.1/web-researcher-mcp_1.37.1_linux_arm64.tar.gz"
+      sha256 "c2fd3eec8de774144f02c3666727b55effae2306cc56e18e349042ed9095465a"
       define_method(:install) do
         bin.install "web-researcher-mcp"
         (share/"web-researcher-mcp/lenses").install Dir["lenses/*"] if Dir.exist?("lenses")
