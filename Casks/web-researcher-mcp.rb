@@ -4,22 +4,22 @@ cask "web-researcher-mcp" do
 
   on_macos do
     on_intel do
-      sha256 "edc8eb49b1833c17528c629dd8bf59dc3b777b9657c9d6591b7baa7d7e16ae36"
+      sha256 "c52bb89a243a2250e208064929456fb700184ee95e3bcd0dd88f65d98be04570"
       url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v#{version}/web-researcher-mcp_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "9682d7696e65a8126f98702235e0ff139811dd942252a76af16750ddbff4c55b"
+      sha256 "d201f7d9c20eb6a36b0f6af4dadca4a50e4f97fdaf8620acd91881b127f45ac3"
       url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v#{version}/web-researcher-mcp_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "a3c433eee0ed976645a0729221ae2d39d8380626116e0267d424aea9ed30d986"
+      sha256 "c108c7ff0f7711354f586d7029ad810e692a2d61f1019019a98a35503630f3ac"
       url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v#{version}/web-researcher-mcp_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "aaed04948fad61fe6be3620c7b9470d8ad418b35581d9f3c70f5fcc78a798e8f"
+      sha256 "b6450f2716ba62ca96fa63c8a68c2e525171dd94193787736f7321d462b4541e"
       url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v#{version}/web-researcher-mcp_#{version}_linux_arm64.tar.gz"
     end
   end
