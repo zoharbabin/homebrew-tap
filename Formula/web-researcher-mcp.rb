@@ -11,7 +11,7 @@ class WebResearcherMcp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v1.49.4/web-researcher-mcp_1.49.4_darwin_amd64.tar.gz"
-      sha256 "c5e2f9fc98765f175f7bef6573103eef2029b7774125140b5b0a391f63577c4d"
+      sha256 "3a93d3409e51d9206a5803f3ce481f71fad964fa93d891ef5ba8266eb0e3c0e7"
 
       define_method(:install) do
         bin.install "web-researcher-mcp"
@@ -20,7 +20,7 @@ class WebResearcherMcp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v1.49.4/web-researcher-mcp_1.49.4_darwin_arm64.tar.gz"
-      sha256 "9b32dd7af43558a01f914bf0229d379bcea76558ab2f79d1980596b15035e62c"
+      sha256 "5fc60c97e56a1e0122ef1811dacde4b6e4734889c87f0979f1a2e8203457a233"
 
       define_method(:install) do
         bin.install "web-researcher-mcp"
@@ -32,7 +32,7 @@ class WebResearcherMcp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v1.49.4/web-researcher-mcp_1.49.4_linux_amd64.tar.gz"
-      sha256 "50d5a946c93c4d743e41f9f7ef82817e9eb7a5517a238de14f2c3072e0da3f82"
+      sha256 "e651667d12f6effe42ac304654559549d2357373353c7ffdf192b1ef644442ef"
       define_method(:install) do
         bin.install "web-researcher-mcp"
         (share/"web-researcher-mcp/lenses").install Dir["lenses/*"] if Dir.exist?("lenses")
@@ -40,7 +40,7 @@ class WebResearcherMcp < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/zoharbabin/web-researcher-mcp/releases/download/v1.49.4/web-researcher-mcp_1.49.4_linux_arm64.tar.gz"
-      sha256 "bfb0099e01c3cab2495b837e247c46c2eff3974fe42d74aa6f037e134737d383"
+      sha256 "94c33fe428b4c5d3b16a54b0336d5b98f4f7a7427bbb95861c6903e5772ccee5"
       define_method(:install) do
         bin.install "web-researcher-mcp"
         (share/"web-researcher-mcp/lenses").install Dir["lenses/*"] if Dir.exist?("lenses")
